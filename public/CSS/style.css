@@ -25,6 +25,7 @@
 }
 /*Body*/
 body{
+    color: var(--grafit);
     background-color: var(--background);
     font-family:  'InterRegular';
     font-size: 15px;
@@ -65,9 +66,28 @@ h3{
 .btn{
     margin: 10px;
 }
+.buttonc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Form*/
 form{
         display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.form-select,.form-input,.form-control{
+    width: 300px;
+    margin: 10px;
+}
+/*Link*/
+.a{
+    text-decoration: none;
+    color: var(--grafit);
+}
+.a:hover{
+    text-decoration: none;
+    color: var(--blue);
 }

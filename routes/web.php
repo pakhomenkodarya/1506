@@ -24,4 +24,4 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::get('/admin', [AdminController::class,'index'])->name('admin.index');
     Route::put('/admin/updateStatus/{appointment}', [AdminController::class,'updateStatus'])->name('admin.updateStatus');
 });
-Route::post('/logout', [AuthController::class,'/logout'])->name('/logout');
+Route::post('/logout', [AuthController::class,'logout'])->name('logout');

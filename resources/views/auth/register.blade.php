@@ -3,7 +3,7 @@
 @section('main')
 <!--Start success-->
     @if(session('error'))
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="Alert">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="Alert">
     {{session('error')}}
     
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"  id="closeBtn"></button>
@@ -11,7 +11,7 @@
     @endif<!--End success-->
     <!--Start success-->
     @if($errors->any())
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="Alert">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="Alert">
         @foreach($errors->all() as $error)
     {{$error}}<br>
     @endforeach
@@ -46,6 +46,6 @@
     <input type="email" name="email" class="form-control">
     </div>
     <button type="submit" class="btn btn-light">Зарегистрироваться</button>
-    <p class="centerp">Уже есть аккаунт?<a href="{{route('login')}}">Войти</a></p>
+    <p class="centerp">Уже есть аккаунт?<a href="{{route('login')}} " class="a">Войти</a></p>
 </form>
 @endsection
