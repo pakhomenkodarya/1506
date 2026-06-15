@@ -1,0 +1,73 @@
+/*Fonts*/
+@font-face {
+    font-family: 'InterBold';
+    src: url(../fonts/Inter/Inter/static/Inter_28pt-Bold.ttf);
+}
+@font-face {
+    font-family: 'InterMedium';
+    src: url(../fonts/Inter/Inter/static/Inter_18pt-Medium.ttf);
+}
+@font-face {
+    font-family: 'InterRegular';
+    src: url(../fonts/Inter/Inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: 'LightItalic';
+    src: url(../fonts/Inter/Inter/static/Inter_18pt-LightItalic.ttf);
+}
+/*Colors*/
+:root{
+    --blue:#0056D2;
+    --grafit:#2C3E50;
+    --silver:#BDC3C7;
+    --background:#F4F6F9;
+    --accent:#FFFFFF
+}
+/*Body*/
+body{
+    background-color: var(--background);
+    font-family:  'InterRegular';
+    font-size: 15px;
+}
+footer,header{
+    padding: 20px;
+    background-color: var(--silver);
+}
+/*Text*/
+h1{
+     
+    font-family:  'InterBold';
+    font-size: 32px;
+}
+h2{text-align: center;
+    margin: 20px;
+    font-family:  'InterMedium';
+    font-size: 22px;
+}
+h3{
+    text-align: center;
+    font-family:  'InterMedium';
+    font-size: 16px;
+}
+.accent{
+     text-align: center;
+    font-family:  'InterItalic';
+    font-size: 13px;
+}
+.centerfooter{
+    text-align: center;
+    margin: 5px;
+}
+.centerp{
+    text-align: center;
+}
+/*Buttons*/
+.btn{
+    margin: 10px;
+}
+form{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

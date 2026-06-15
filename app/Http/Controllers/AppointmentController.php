@@ -10,5 +10,7 @@ use App\Models\Review;
 use App\Models\User;
 class AppointmentController extends Controller
 {
-    //
+    public function index(){
+        return view('appointments.index');
+    }
 }

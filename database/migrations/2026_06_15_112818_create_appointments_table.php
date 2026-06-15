@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+             $table->string('category');
             $table->string('brand');
              $table->string('number');
             $table->text('problem');

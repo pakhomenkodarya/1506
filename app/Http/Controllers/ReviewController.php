@@ -10,5 +10,7 @@ use App\Models\Review;
 use App\Models\User;
 class ReviewController extends Controller
 {
-    //
+    public function create(){
+        return view('reviews.create');
+    }
 }
