@@ -11,11 +11,17 @@ use App\Models\User;
 class Appointment extends Model
 {
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+      'user_id',
+      'brand',
+      'number',
+      'problem',
+      'method',
+      'status',
     ];
-    public function(){
-        return $this->(::class),
+    public function review(){
+        return $this->hasOne(Review::class);
+    }
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }
